@@ -1,0 +1,49 @@
+﻿*{
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background: #e0d7d7;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    position: relative;
+}
+
+.navbar {
+    font-family: Verdana;
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: #ad4f4f;
+    padding: 24px 0;
+}
+
+.navbar h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.navbar ul li{
+    font-size: 20px;
+    padding: 12px;
+    border-bottom: 2px solid;
+}
+
+.navbar ul li a{
+    color: #000000;
+    display: block;
+}
+
+.navbar ul li:hover{
+    background: #ddcfca;
+}
+
+.selected { /*this highlights in the menu bar the current page you are on.*/
+    background: #ddcfca;
+}
