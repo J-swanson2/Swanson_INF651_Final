@@ -8,33 +8,46 @@
     <!--<link rel="icon" type="image/x-icon" href="" />-->
 </head>
 <body>
-    <div class="wrapper">
-        <nav>
-
+    <nav>
+        <div class="wrapper">
             <div class="navbar">
                 <h2>Dynasty Tracker</h2>
                 <ul>
                     <li><a href="home.html">Home</a></li>
                     <li><a href="schedule.html">Schedule</a></li>
                     <li class="selected"><a href="recruits.html">Recruits</a></li>
-                    <li><a href="stats.html">Stats</a></li>
-                    <li><a href="standout.html">Standout Performances</a></li>
+                    <li><a href="stats.html">Stats</a></li>                 
                     <li><a href="drafted.html">Drafted Players</a></li>
                     <li><a href="help.html">Help</a></li>
                 </ul>
             </div>
-
-        </nav>
+        </div>
+    </nav>
 
         <header>
+            <h1>Recruits To Watch</h1>
         </header>
 
         <main>
-            <button></button>
+            <div class="container">
+                <form>
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" />
+
+                        <label for="stars">Stars</label>
+                        <input type="number" id="stars" />
+
+                        <button type="submit">submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="container">
+                <button type="button">Add Another Recruit</button>
+            </div>
         </main>
 
         <footer>
         </footer>
-    </div>
 </body>
 </html>

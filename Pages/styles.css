@@ -4,23 +4,40 @@
 }
 
 body {
+    font-family: Arial;
     background: #e0d7d7;
     margin: 0;
     padding: 0;
 }
 
-.wrapper {
+.wrapper { /*wrapper for nav section*/
     display: flex;
     position: relative;
+}
+
+.container { /* wrapper for main section*/
+    display: flex;
+    position: relative;
+    margin-left: 15%;
+    margin-bottom: 10px;
+}
+
+.box { /* class for organizing items in class container*/
+       border: 4px solid;
+       padding: 10px;
+       text-align: center;
+       margin-left: 11%;
 }
 
 .navbar {
     font-family: Verdana;
     position: fixed;
-    width: 200px;
+    width: 10%;
+    min-width: 175px;
     height: 100%;
     background: #ad4f4f;
     padding: 24px 0;
+    
 }
 
 .navbar h2{
@@ -46,4 +63,20 @@ body {
 
 .selected { /*this highlights in the menu bar the current page you are on.*/
     background: #ddcfca;
+}
+h1 { 
+    text-align: center;
+    font-size: 50px;
+}
+
+table {
+   
+}
+
+th {
+    border: 1px solid black;
+}
+
+td {
+    border: 1px solid black;
 }
