@@ -30,7 +30,10 @@
 
     <main>
         <div class="container">
-            <h2>Year 2024</h2>
+            <h2 id="year"></h2>
+        </div>
+        <div class="container">
+            <h2 id="record"></h2>
         </div>
         <div class="container">
             <table id="scheduleTable">
@@ -43,25 +46,26 @@
                 </thead>
                 <tbody id="scheduleTableBody">
                 </tbody>
-            </table>
+            </table>      
+                
         </div>
 
-        <div class="container">
-            <form id="scheduleForm">
-                <div>
-                    <label for="opponent1">Opponent</label>
-                    <input type="text" id="opponent1" />
+            <div class="container">
+                <form id="scheduleForm">
+                    <div>
+                        <label for="opponent1">Opponent</label>
+                        <input type="text" id="opponent1" />
 
-                    <label for="result">Win?</label>
-                    <input type="checkbox" id="result" />
+                        <label for="result">Win?</label>
+                        <input type="checkbox" id="result" />
 
-                    <label for="score">Final Score</label>
-                    <input type="text" id="score" />
+                        <label for="score">Final Score</label>
+                        <input type="text" id="score" />
 
-                    <button type="button" onclick="submitSchedule()">submit</button>
-                </div>
-            </form>
-        </div>
+                        <button type="button" onclick="submitSchedule()">submit</button>
+                    </div>
+                </form>
+            </div>
     </main>
 
     <footer>

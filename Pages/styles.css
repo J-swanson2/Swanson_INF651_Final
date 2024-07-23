@@ -20,6 +20,7 @@ body {
     position: relative;
     margin-left: max(200px, 15%);
     margin-bottom: 10px;
+    margin-right: 50px;
 }
 
 .box { /* class for organizing items in class container*/
