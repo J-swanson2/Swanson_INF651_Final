@@ -16,7 +16,7 @@
                     <li><a href="home.html">Home</a></li>
                     <li><a href="schedule.html">Schedule</a></li>
                     <li class="selected"><a href="recruits.html">Recruits</a></li>
-                    <li><a href="stats.html">Stats</a></li>                 
+                    <li><a href="stats.html">Stats</a></li>
                     <li><a href="drafted.html">Drafted Players</a></li>
                     <li><a href="help.html">Help</a></li>
                 </ul>
@@ -24,30 +24,43 @@
         </div>
     </nav>
 
-        <header>
-            <h1>Recruits To Watch</h1>
-        </header>
+    <header>
+        <h1>Recruits To Watch</h1>
+    </header>
 
-        <main>
-            <div class="container">
-                <form>
-                    <div>
-                        <label for="name">Name</label>
-                        <input type="text" id="name" />
+    <main>
+        <div class="container">
+            <table id="recruitTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Stars</th>
+                    </tr>
+                </thead>
+                <tbody id="recruitTableBody">
+                </tbody>
+            </table>
+        </div>
+        <div class="container">
+            <form>
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" />
 
-                        <label for="stars">Stars</label>
-                        <input type="number" id="stars" />
+                    <label for="stars">Stars</label>
+                    <input type="number" id="stars" />
 
-                        <button type="submit">submit</button>
-                    </div>
-                </form>
-            </div>
-            <div class="container">
-                <button type="button">Add Another Recruit</button>
-            </div>
-        </main>
+                    <button type="button" onclick="submitRecruit()">submit</button>
+                </div>
+            </form>
+        </div>
+    </main>
 
-        <footer>
-        </footer>
+    <footer>
+    </footer>
+
+    <script src="scripts.js">
+
+    </script>
 </body>
 </html>

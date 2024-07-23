@@ -18,7 +18,7 @@ body {
 .container { /* wrapper for main section*/
     display: flex;
     position: relative;
-    margin-left: 15%;
+    margin-left: max(200px, 15%);
     margin-bottom: 10px;
 }
 
@@ -75,8 +75,21 @@ table {
 
 th {
     border: 1px solid black;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
 }
 
 td {
     border: 1px solid black;
+    text-align: center;
+}
+
+input[type="number"]{
+    max-width: 50px;
+}
+
+#position {
+    max-width: 70px;
 }

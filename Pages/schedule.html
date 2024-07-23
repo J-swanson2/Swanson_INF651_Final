@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--<link rel="icon" type="image/x-icon" href="" />-->
 </head>
-<body>
+<body onload="populateSchedule();">
     <nav>
         <div class="wrapper">
             <div class="navbar">
@@ -24,33 +24,52 @@
         </div>
     </nav>
 
-        <header>
-            <h1>Schedule and Results</h1>
-        </header>
+    <header>
+        <h1>Schedule and Results</h1>
+    </header>
 
-        <main>
-            <div class="container">
-                <form>
-                    <div>
-                        <label for="opponent1">Game 1</label>
-                        <input type="text" id="opponent1" />
+    <main>
+        <div class="container">
+            <h2>Year 2024</h2>
+        </div>
+        <div class="container">
+            <table id="scheduleTable">
+                <thead>
+                    <tr>
+                        <th>Opponent</th>
+                        <th>Result</th>
+                        <th>Final Score</th>
+                    </tr>
+                </thead>
+                <tbody id="scheduleTableBody">
+                </tbody>
+            </table>
+        </div>
 
-                        <label for="result">Win?</label>
-                        <input type="checkbox" id="result" />
+        <div class="container">
+            <form id="scheduleForm">
+                <div>
+                    <label for="opponent1">Opponent</label>
+                    <input type="text" id="opponent1" />
 
-                        <label for="score">Final Score</label>
-                        <input type="text" id="score" />
+                    <label for="result">Win?</label>
+                    <input type="checkbox" id="result" />
 
-                        <button type="submit">submit</button>
-                    </div>
-                </form>
-            </div>
-            <div class="container">
-                <button type="button">Add Another Game</button>
-            </div>
-        </main>
+                    <label for="score">Final Score</label>
+                    <input type="text" id="score" />
 
-        <footer>
-        </footer>
+                    <button type="button" onclick="submitSchedule()">submit</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+    </footer>
+
+    <script src="scripts.js">
+    
+
+    </script>
 </body>
 </html>

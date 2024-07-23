@@ -25,15 +25,17 @@
         </div>
     </nav>
 
-        <header>
-            <h1>Player Stats</h1>
-        </header>
+    <header>
+        <h1>Player Stats</h1>
+    </header>
 
-        <main>
-            <h2>Season Stats</h2>
-            <div class="container">
-                <table>
+    <main>
+        <h2>Season Stats</h2>
+        <div class="container">
+            <table id="statsTable">
+                <thead>
                     <tr>
+                        <th>Year</th>
                         <th>Name</th>
                         <th>Pos</th>
                         <th>Games</th>
@@ -45,23 +47,61 @@
                         <th>Rush yds</th>
                         <th>Rush TDs</th>
                     </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </table>
-            </div>
-        </main>
+                </thead>
+                <tbody>
 
-        <footer>
-        </footer>  
+                </tbody>
+            </table>
+        </div>
+
+        <div class="container">
+            <form>
+                <div>
+                    <label for="year">Year</label>
+                    <input type="number" id="year" />
+
+                    <label for="name">Name</label>
+                    <input type="text" id="name" />
+
+                    <label for="position">Position</label>
+                    <input type="text" id="position" />
+
+                    <label for="games">Games</label>
+                    <input type="number" id="games" />
+
+                    <label for="passYards">Pass Yards</label>
+                    <input type="number" id="passYards" />
+
+                    <label for="passTD">Pass TDs</label>
+                    <input type="number" id="passTD" />
+
+                    <label for="int">Int</label>
+                    <input type="number" id="int" />
+
+                    <label for="recYards">Rec Yards</label>
+                    <input type="number" id="recYards" />
+
+                    <label for="recTD">Rec TDs</label>
+                    <input type="number" id="recTD" />
+
+                    <label for="rushYards">Rush Yards</label>
+                    <input type="number" id="rushYards" />
+
+                    <label for="rushTD">Rush TDs</label>
+                    <input type="number" id="rushTD" />
+
+
+                    <button type="button" onclick="submitStats()">submit</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+    </footer>
+
+    <script src="scripts.js">
+
+    </script>
 </body>
 </html>

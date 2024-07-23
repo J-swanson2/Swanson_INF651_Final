@@ -29,10 +29,44 @@
     </header>
 
     <main>
-        <button></button>
+        <div class="container">
+            <table id="draftTable">
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>Round</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <div class="container">
+            <form>
+                <div>
+                    <label for="year">Year</label>
+                    <input type="number" id="year" />
+
+                    <label for="name">Name</label>
+                    <input type="text" id="name" />
+
+                    <label for="position">Position</label>
+                    <input type="text" id="position" />
+
+                    <label for="round">Round</label>
+                    <input type="number" id="round" />
+
+                    <button type="button" onclick="submitDraft()">submit</button>
+                </div>
+            </form>
+        </div>
     </main>
 
     <footer>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
